@@ -1,487 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hemstone Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemstone Omollo - Full Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'binance-dark': '#0B0E11',
+                        'binance-darker': '#181A20',
+                        'binance-card': '#1E2329',
+                        'binance-yellow': '#F0B90B',
+                        'binance-hover': '#2B3139',
+                        'binance-border': '#2B3139',
+                        'binance-text': '#EAECEF',
+                        'binance-text-secondary': '#848E9C',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Barlow', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-binance-dark text-binance-text">
+    <!-- Navigation -->
+    <nav class="bg-binance-darker shadow-lg fixed w-full top-0 z-50 border-b border-binance-border">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-binance-yellow">Hemstone Omollo</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-binance-text hover:text-binance-yellow transition">Home</a>
+                    <a href="#about" class="text-binance-text hover:text-binance-yellow transition">About</a>
+                    <a href="#projects" class="text-binance-text hover:text-binance-yellow transition">Projects</a>
+                    <a href="#skills" class="text-binance-text hover:text-binance-yellow transition">Skills</a>
+                    <a href="#contact" class="text-binance-text hover:text-binance-yellow transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-binance-text">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/photo.png" alt=""/>
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Hemstone Omolo Ouma</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Web Developer & System Administrator</p>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-binance-text hover:text-binance-yellow">Home</a>
+                <a href="#about" class="block py-2 text-binance-text hover:text-binance-yellow">About</a>
+                <a href="#projects" class="block py-2 text-binance-text hover:text-binance-yellow">Projects</a>
+                <a href="#skills" class="block py-2 text-binance-text hover:text-binance-yellow">Skills</a>
+                <a href="#contact" class="block py-2 text-binance-text hover:text-binance-yellow">Contact</a>
             </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/portfolio5.webp" alt="" >
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/scrapper.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/house.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/chatbot.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/guru.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/voltage.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">
-                        Hello Reader, my name is Hemstone, Hemstone Ouma. I am a Kenyan Web Developer and a system's administrator, the pioneer and moderator of VoltageLabs a web development agency in Kenya. 
-                        When I came to existence in 2017 as voltage, nobody
-                        knew me, but for now, I am known by few I have positively contributed into their lives. I have developed several web based applications and still 
-                        maintain their source code to date guruwritershub.com being one of these sites.
-                        I love python, it has been my primary programming language since 2017. I have used differnt frameworks however to develop various websites, but most of them are 
-                        built on Django as a Backend framework. I have learnt and implemented API's using Django Rest Framework. I am as well familiar with React a javascript front end libary, as a bonus I use Tailwind css to design my applications.
-                    </p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">I have no much to brag over as long as education and certificates are concerned, what I am sure about is that
-                        I am a Kenyan Mathematician and Computer Scientist, and holds the degree from Kenyatta University. I am a self taught System Administrator, however, I learned about web development in Kenyatta University. With the knowledge I have, I have been able to set up and maintain servers. One law and a rule of thumb, you will not be taught everything in school.
-                        Hire my services, you will love my milestones! 
-                    </p></div>
-                </div>
-                <!-- About Section Button-->
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <h4>Name</h4>
-                                    <p class="help-block text-danger">Hemstone Omolo Ouma</p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <h4>Email Address</h4>  
-                                    <p class="help-block text-danger">zeroday435@gmail.com</p>
-                                    <p class="help-block text-danger">omollohemstone@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <h4>Phone</h4>  
-                                    <p class="help-block text-danger">+254719781762</p>
-                                    <P class="help-block text-danger">+254112009936</P>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Social Media Links</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/chrise.hemstone/"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/Malcom87795344"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="linkedin.com/in/hemstone-omollo-246122194"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © voltage labs 2023</small></div>
         </div>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">GURUWRITERSHUB WEBSITE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/guru.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Guruwriters provides comprehensive assignment help solutions to students from all over the world.
-                                         With their experienced writers, you can get top-notch quality solutions for all your academic writing needs, 
-                                         Guruwriters brings together experts and students. This is the latest project I have worked on. View the 
-                                         website on<br><a href="https://www.guruwritershub.com/">https://www.guruwritershub.com/</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-binance-dark min-h-screen flex items-center">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img src="./assets/img/passport.jpg" alt="profile image"  class="w-48 h-48 mx-auto rounded-full flex items-center justify-center text-binance-dark text-6xl font-bold shadow-2xl shadow-binance-yellow/20">
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-binance-text mb-4">Hemstone Omollo</h1>
+                <p class="text-2xl md:text-3xl text-binance-yellow mb-6">Full Stack Developer</p>
+                <p class="text-xl text-binance-text-secondary mb-8">Python/Django & Vue.js/Nuxt.js Specialist</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://github.com/hemarastylepeke" target="_blank" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hemstone-omollo-246122194/" target="_blank" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:omollohemstone@gmail.com" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#projects" class="bg-binance-yellow text-binance-dark px-8 py-3 rounded-lg hover:bg-yellow-500 transition font-semibold">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="bg-transparent text-binance-yellow px-8 py-3 rounded-lg hover:bg-binance-hover transition font-semibold border-2 border-binance-yellow">
+                        Get In Touch
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">GURU WRITERS HUB WEBSITE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/guru.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This is an assignment help platform. It brings students and Experts who can handle their assignments together. You can read more about this project on the official website.
-                                        <br><a href="https://github.com/hemarastylepeke/CAR-PRICES-PREDICTION/tree/cars">guruwritershub.com</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-binance-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-binance-card p-8 rounded-lg shadow-lg border border-binance-border">
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        Hello! I'm Hemstone Omollo, a Kenyan Full Stack Developer and founder of <strong class="text-binance-yellow">Voltageitlabs</strong>, 
+                        a web development agency in Kenya. With over 6 years of experience in software development, I specialize 
+                        in building scalable, AI-powered web applications using Python/Django and Vue.js/Nuxt.js.
+                    </p>
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        I've successfully built and launched multiple production applications, including <strong class="text-binance-yellow">chasemyinvoices.com</strong>, 
+                        an AI-powered invoicing SaaS platform currently serving paying customers. My expertise spans the entire 
+                        software development lifecycle from architecture and database design to deployment and maintenance.
+                    </p>
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        Python has been my primary programming language since 2017, and I've built most of my projects using 
+                        Django as the backend framework. I'm proficient in Django REST Framework for API development, and I use 
+                        modern frontend technologies like Vue.js, Nuxt.js, and Tailwind CSS to create responsive user interfaces.
+                    </p>
+                    <p class="text-lg text-binance-text-secondary leading-relaxed">
+                        I hold a <strong class="text-binance-yellow">Bachelor of Science in Mathematics and Computer Science</strong> from Kenyatta University. 
+                        Beyond development, I'm passionate about AI integration, having worked extensively with OpenAI GPT-4 and 
+                        Claude APIs to build intelligent, agentic systems.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">UNIT STORE WEBSITE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bookstore.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Unit store website enables Kenyatta University Students to upload scanned past papers inform of pdf, upload word assignments given by their teachers for any other student to access and powerpoint representations. These Documents can then be stored safely and can later be accesed by First Years joining the institution or any other student anywhere who would wish to use these revision materials and study guides. Further important links to donwload important books are also indicated at the homepage. Click on the link below for project source code.<br><a href="https://github.com/hemarastylepeke/UNIT-STORE-WEBSITE">https://github.com/hemarastylepeke/UNIT-STORE-WEBSITE</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-binance-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: Chasemyinvoices -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/chasemyinvoices.png" alt="chasemyinvoices screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Chasemyinvoices</h3>
+                        <p class="text-binance-text-secondary mb-4">AI-powered invoicing automation platform with intelligent payment prediction and automated follow-ups.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Vue.js</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">OpenAI</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
                         </div>
+                        <a href="https://chasemyinvoices.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Subliminal I AM -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/subliminaliam.png" alt="Subliminal I AM screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Subliminal I AM</h3>
+                        <p class="text-binance-text-secondary mb-4">Cross-platform subliminal audio application with AI voice generation using ElevenLabs technology.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Electron</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">ElevenLabs</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
+                        </div>
+                        <a href="https://subliminaliam.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Guruwritershub -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/guruwritershub.png" alt="Guruwritershub screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Guruwritershub</h3>
+                        <p class="text-binance-text-secondary mb-4">Marketplace platform connecting students with expert writers, featuring payment processing and order management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PayPal</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Flutterwave</span>
+                        </div>
+                        <a href="https://www.guruwritershub.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: VoltageITLabs -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/voltageitlabs.png" alt="VoltageITLabs screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Voltageitlabs</h3>
+                        <p class="text-binance-text-secondary mb-4">Web development agency delivering AI-powered solutions and custom web applications for businesses.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Nuxt.js</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">LangGraph</span>
+                        </div>
+                        <a href="https://voltageitlabs.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: CEB Mauritius -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/ceb.png" alt="CEB screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">CEB Mauritius Portal</h3>
+                        <p class="text-binance-text-secondary mb-4">Customer portal for Central Electricity Board serving 400K+ users with authentication and email automation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS SES</span>
+                        </div>
+                        <a href="https://cebbetatest.mu.cebcoop.mu/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: House Price Prediction -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/bankbridgeapi.png" alt="CEB screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Bankbridgeapi</h3>
+                        <p class="text-binance-text-secondary mb-4">Banking Orchestration API for kenyan banks. Developers can integrate with multiple banks using a single unified API.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Python</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Next.js</span>
+                        </div>
+                        <button class="bg-orange border border-orange-400 text-orange-400 rounded-lg p-3">Under development</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-binance-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Technical Skills</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-server text-binance-yellow mr-3"></i> Backend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Python</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django REST Framework</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Celery</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Redis</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-laptop-code text-binance-yellow mr-3"></i> Frontend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">JavaScript</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">TypeScript</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Vue.js</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Nuxt.js</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-robot text-binance-yellow mr-3"></i> AI & Machine Learning
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">OpenAI GPT-4</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Claude API</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">LangGraph</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">ML Models</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-database text-binance-yellow mr-3"></i> Databases & DevOps
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">PostgreSQL</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">MySQL</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Railway</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Docker</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-binance-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto bg-binance-card rounded-lg shadow-xl p-8 border border-binance-border">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-user text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Name</p>
+                            <p class="text-binance-text-secondary">Hemstone Omollo Ouma</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Email</p>
+                            <a href="mailto:omollohemstone@gmail.com" class="text-binance-yellow hover:text-yellow-500">omollohemstone@gmail.com</a>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Phone</p>
+                            <p class="text-binance-text-secondary">+254 112 009 936</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Location</p>
+                            <p class="text-binance-text-secondary">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-binance-border">
+                    <h3 class="text-xl font-bold mb-4 text-binance-text">Connect With Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/hemarastylepeke" target="_blank" class="bg-binance-hover text-binance-yellow p-3 rounded-lg hover:bg-binance-border transition border border-binance-border">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hemstone-omollo-246122194" target="_blank" class="bg-binance-hover text-binance-yellow p-3 rounded-lg hover:bg-binance-border transition border border-binance-border">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">NEWS SCRAPPER</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/scrapper.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This code helps me scrape KTN, NTV and CITIZEN websites. These are kenyan News Broadcasting Channels. This script scrapes all these sites and prints links to latest news broadcasted by these channels. CitizenScrapper() functions goes ahead and even prints the Titles of the news.Click on the link below for project source code.<br><a href="https://github.com/hemarastylepeke/NewsScrapper/tree/tester">https://github.com/hemarastylepeke/NewsScrapper/tree/tester</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-binance-darker text-binance-text-secondary py-8 border-t border-binance-border">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 Hemstone Omollo | Voltageitlabs. All rights reserved.</p>
+            <p class="mt-2">Built with HTML5, CSS3, JavaScript & Tailwind CSS</p>
         </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">PREDICT HOUSE PRICES</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/house.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This is a task of trying to predict future house prices using melbourne_data obtained from kaggle. the machine learning Algorithms used here are Random forest and Decision tree. Click on the link below to view project source code in jupyter notebook.<br><a href="https://github.com/hemarastylepeke/predict_house_prices">https://github.com/hemarastylepeke/predict_house_prices</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">VOLTAGELABS WEBSITE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">
-                                        Elevate your digital footprint with VoltageLabs, a leading web development agency empowering businesses 
-                                        for success in the online world.
-                                        Voltagelabs is the official website of voltagelabs which is a web development agency. This official website is still under development 
-                                        with last few milestones left.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">CHATBOT</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/chatbot.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This is a wikepedia Chatbot that takes user input and then goes ahead and searches wikipedia website for the information corresponding and most relevant to the user input. The Bot evaluates the input and ensures the information provided is correct, otherwise, if no data is obtained from the wikipedia pages corresponding to the user input, the bot goes ahead and tells the user it checked the pages and found no information corresponding to his/her input. However, this chatbot does not depend on Artificial Intelligence<br><a href="https://github.com/hemarastylepeke/chatbot/tree/neighbor">https://github.com/hemarastylepeke/chatbot/tree/neighbor</a></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
         
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>

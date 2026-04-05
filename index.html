@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemstone Omollo - Full Stack Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Hemstone Omollo - Senior Backend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -68,11 +66,11 @@
         <div class="container mx-auto px-6">
             <div class="text-center">
                 <div class="mb-8">
-                    <img src="./assets/img/passport.jpg" alt="profile image"  class="w-48 h-48 mx-auto rounded-full flex items-center justify-center text-binance-dark text-6xl font-bold shadow-2xl shadow-binance-yellow/20">
+                    <img src="./assets/img/passport.jpg" alt="profile image" class="w-48 h-48 mx-auto rounded-full flex items-center justify-center text-binance-dark text-6xl font-bold shadow-2xl shadow-binance-yellow/20">
                 </div>
                 <h1 class="text-5xl md:text-6xl font-bold text-binance-text mb-4">Hemstone Omollo</h1>
-                <p class="text-2xl md:text-3xl text-binance-yellow mb-6">Full Stack Developer</p>
-                <p class="text-xl text-binance-text-secondary mb-8">Python/Django & Vue.js/Nuxt.js Specialist</p>
+                <p class="text-2xl md:text-3xl text-binance-yellow mb-6">Senior Backend Engineer</p>
+                <p class="text-xl text-binance-text-secondary mb-8">Python · Django · AI/Agentic Systems · PostgreSQL</p>
                 <div class="flex justify-center space-x-6 mb-8">
                     <a href="https://github.com/hemarastylepeke" target="_blank" class="text-binance-text hover:text-binance-yellow transition text-3xl">
                         <i class="fab fa-github"></i>
@@ -103,24 +101,16 @@
             <div class="max-w-4xl mx-auto">
                 <div class="bg-binance-card p-8 rounded-lg shadow-lg border border-binance-border">
                     <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
-                        Hello! I'm Hemstone Omollo, a Kenyan Full Stack Developer and founder of <strong class="text-binance-yellow">Voltageitlabs</strong>, 
-                        a web development agency in Kenya. With over 6 years of experience in software development, I specialize 
-                        in building scalable, AI-powered web applications using Python/Django and Vue.js/Nuxt.js.
+                        I'm Hemstone Omollo, a Senior Backend Engineer with 5+ years building production Django systems — from REST APIs and async task pipelines to AI-powered SaaS products. I'm the founder of <strong class="text-binance-yellow">Voltageitlabs</strong>, a software development agency based in Nairobi, Kenya, serving US and international clients.
                     </p>
                     <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
-                        I've successfully built and launched multiple production applications, including <strong class="text-binance-yellow">chasemyinvoices.com</strong>, 
-                        an AI-powered invoicing SaaS platform currently serving paying customers. My expertise spans the entire 
-                        software development lifecycle from architecture and database design to deployment and maintenance.
+                        I work best when I own a problem end-to-end: architecture, backend, deployment, and iteration. I've built and launched <strong class="text-binance-yellow">Chasemyinvoices</strong> — an AI-driven invoicing automation platform with paying customers — and <strong class="text-binance-yellow">Tenantbox</strong> — a multi-tenant file storage SaaS for developers — entirely solo, from Figma design handoff through Django backend and AWS deployment.
                     </p>
                     <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
-                        Python has been my primary programming language since 2017, and I've built most of my projects using 
-                        Django as the backend framework. I'm proficient in Django REST Framework for API development, and I use 
-                        modern frontend technologies like Vue.js, Nuxt.js, and Tailwind CSS to create responsive user interfaces.
+                        My backend depth includes PostgreSQL schema design with deliberate indexing strategy, Celery/Redis background job infrastructure running reliably in production, and agentic AI workflows using LangGraph and OpenAI GPT-4 where the model decides which action to take next based on business context — not just returning a text response.
                     </p>
                     <p class="text-lg text-binance-text-secondary leading-relaxed">
-                        I hold a <strong class="text-binance-yellow">Bachelor of Science in Mathematics and Computer Science</strong> from Kenyatta University. 
-                        Beyond development, I'm passionate about AI integration, having worked extensively with OpenAI GPT-4 and 
-                        Claude APIs to build intelligent, agentic systems.
+                        I hold a <strong class="text-binance-yellow">Bachelor of Science in Mathematics and Computer Science</strong> from Kenyatta University (2024). Frontend delivery (Nuxt.js, Tailwind CSS) and UI/UX design in Figma are part of my toolkit, but backend engineering and system architecture are where I live.
                     </p>
                 </div>
             </div>
@@ -132,36 +122,58 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Featured Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <!-- Project 1: Chasemyinvoices -->
                 <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
                     <img src="./assets/img/portfolio/chasemyinvoices.png" alt="chasemyinvoices screenshot" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2 text-binance-text">Chasemyinvoices</h3>
-                        <p class="text-binance-text-secondary mb-4">AI-powered invoicing automation platform with intelligent payment prediction and automated follow-ups.</p>
+                        <p class="text-binance-text-secondary mb-4">AI-powered invoicing SaaS with agentic follow-up workflows, regression/decision-tree payment prediction models, and QuickBooks + PayPal integrations. Built solo — backend, ML, DevOps.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Vue.js</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">DRF</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">OpenAI</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS</span>
                         </div>
-                        <a href="https://chasemyinvoices.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                        <a href="https://chasemyinvoice-frontend-production.up.railway.app/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
                             View Project <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 2: Subliminal I AM -->
+                <!-- Project 2: Tenantbox -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/tenantbox.png" alt="Tenantbox screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Tenantbox</h3>
+                        <p class="text-binance-text-secondary mb-4">Multi-tenant file storage SaaS for developers. Two-step upload architecture, isolated tenant storage, Celery/Redis background jobs, and deliberate PostgreSQL indexing from day one.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Redis</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS S3</span>
+                        </div>
+                        <a href="https://tenantbox.dev" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Subliminal I AM -->
                 <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
                     <img src="./assets/img/portfolio/subliminaliam.png" alt="Subliminal I AM screenshot" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2 text-binance-text">Subliminal I AM</h3>
-                        <p class="text-binance-text-secondary mb-4">Cross-platform subliminal audio application with AI voice generation using ElevenLabs technology.</p>
+                        <p class="text-binance-text-secondary mb-4">Django REST API powering an Electron desktop app for a New York client. ElevenLabs voice API integration generating hundreds of user-specific audio tracks. Behaviour-triggered onboarding via AWS SES + Celery.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">DRF</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Electron</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">ElevenLabs</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS SES</span>
                         </div>
                         <a href="https://subliminaliam.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
                             View Project <i class="fas fa-external-link-alt ml-1"></i>
@@ -169,35 +181,20 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Guruwritershub -->
+                <!-- Project 4: Guruwritershub -->
                 <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
                     <img src="./assets/img/portfolio/guruwritershub.png" alt="Guruwritershub screenshot" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2 text-binance-text">Guruwritershub</h3>
-                        <p class="text-binance-text-secondary mb-4">Marketplace platform connecting students with expert writers, featuring payment processing and order management.</p>
+                        <p class="text-binance-text-secondary mb-4">Freelance marketplace backend with order management, payment reconciliation, and three integrated payment gateways — PayPal, Flutterwave, and Intasend (M-Pesa).</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PayPal</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Flutterwave</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Intasend</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Google OAuth2</span>
                         </div>
                         <a href="https://www.guruwritershub.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
-                            View Project <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4: VoltageITLabs -->
-                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
-                    <img src="./assets/img/portfolio/voltageitlabs.png" alt="VoltageITLabs screenshot" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Voltageitlabs</h3>
-                        <p class="text-binance-text-secondary mb-4">Web development agency delivering AI-powered solutions and custom web applications for businesses.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Nuxt.js</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">LangGraph</span>
-                        </div>
-                        <a href="https://voltageitlabs.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
                             View Project <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
@@ -208,11 +205,12 @@
                     <img src="./assets/img/portfolio/ceb.png" alt="CEB screenshot" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2 text-binance-text">CEB Mauritius Portal</h3>
-                        <p class="text-binance-text-secondary mb-4">Customer portal for Central Electricity Board serving 400K+ users with authentication and email automation.</p>
+                        <p class="text-binance-text-secondary mb-4">Backend contribution to a public utility portal serving a large national user base. Django authentication system and Celery-driven email notification workflows via AWS SES.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS SES</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
                         </div>
                         <a href="https://cebbetatest.mu.cebcoop.mu/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
                             View Project <i class="fas fa-external-link-alt ml-1"></i>
@@ -220,16 +218,16 @@
                     </div>
                 </div>
 
-                <!-- Project 6: House Price Prediction -->
+                <!-- Project 6: Bankbridgeapi -->
                 <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
-                    <img src="./assets/img/portfolio/bankbridgeapi.png" alt="CEB screenshot" class="w-full h-48 object-cover">
+                    <img src="./assets/img/portfolio/bankbridgeapi.png" alt="Bankbridgeapi screenshot" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2 text-binance-text">Bankbridgeapi</h3>
-                        <p class="text-binance-text-secondary mb-4">Banking Orchestration API for kenyan banks. Developers can integrate with multiple banks using a single unified API.</p>
+                        <p class="text-binance-text-secondary mb-4">Banking Orchestration API for Kenyan banks. A single unified API layer allowing developers to integrate with multiple banks without managing separate integrations.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Python</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
-                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Next.js</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django Ninja</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
                         </div>
                         <button class="bg-orange border border-orange-400 text-orange-400 rounded-lg p-3">Under development</button>
                     </div>
@@ -244,55 +242,86 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Technical Skills</h2>
             <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+
+                <!-- Backend — first and largest -->
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-yellow/30 md:col-span-2">
                     <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
-                        <i class="fas fa-server text-binance-yellow mr-3"></i> Backend Development
+                        <i class="fas fa-server text-binance-yellow mr-3"></i> Backend Engineering
+                        <span class="ml-3 text-sm font-normal text-binance-yellow border border-binance-yellow/40 px-2 py-0.5 rounded-full">Primary</span>
                     </h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Python</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django REST Framework</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django Ninja</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Celery</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Redis</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">PostgreSQL</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">JWT Auth</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">REST API Design</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Webhook Processing</span>
                     </div>
                 </div>
 
+                <!-- AI & Agentic Systems -->
                 <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
                     <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
-                        <i class="fas fa-laptop-code text-binance-yellow mr-3"></i> Frontend Development
+                        <i class="fas fa-robot text-binance-yellow mr-3"></i> AI & Agentic Systems
                     </h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">JavaScript</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">LangGraph</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">OpenAI GPT-4</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Claude API</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">RAG / pgvector</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Agentic Workflows</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Embeddings</span>
+                    </div>
+                </div>
+
+                <!-- Infrastructure & DevOps -->
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-cloud text-binance-yellow mr-3"></i> Infrastructure & DevOps
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS EC2</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS S3</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS SES</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Docker</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Railway</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <!-- Integrations -->
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-plug text-binance-yellow mr-3"></i> Integrations
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Stripe</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">PayPal</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Flutterwave</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Intasend</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">QuickBooks</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Google OAuth2</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">ElevenLabs</span>
+                    </div>
+                </div>
+
+                <!-- Frontend (supporting capability) -->
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-laptop-code text-binance-yellow mr-3"></i> Frontend
+                        <span class="ml-3 text-sm font-normal text-binance-text-secondary border border-binance-border px-2 py-0.5 rounded-full">Supporting</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">TypeScript</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Vue.js</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Nuxt.js</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Next.js</span>
                         <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Tailwind CSS</span>
-                    </div>
-                </div>
-
-                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
-                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
-                        <i class="fas fa-robot text-binance-yellow mr-3"></i> AI & Machine Learning
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">OpenAI GPT-4</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Claude API</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">LangGraph</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">ML Models</span>
-                    </div>
-                </div>
-
-                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
-                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
-                        <i class="fas fa-database text-binance-yellow mr-3"></i> Databases & DevOps
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">PostgreSQL</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">MySQL</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Railway</span>
-                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Docker</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Figma</span>
                     </div>
                 </div>
 
@@ -317,22 +346,28 @@
                         <i class="fas fa-envelope text-binance-yellow text-2xl w-12"></i>
                         <div>
                             <p class="font-semibold text-binance-text">Email</p>
-                            <a href="mailto:zeroday435@gmail.com" class="text-binance-yellow hover:text-yellow-500">zeroday435@gmail.com</a>
-                            <br>
+                            <a href="mailto:omollohemstone@gmail.com" class="text-binance-yellow hover:text-yellow-500">omollohemstone@gmail.com</a>
                         </div>
                     </div>
                     <div class="flex items-center">
                         <i class="fas fa-phone text-binance-yellow text-2xl w-12"></i>
                         <div>
-                            <p class="font-semibold text-binance-text">Phone</p>
-                            <p class="text-binance-text-secondary">+254719781762</p>
+                            <p class="font-semibold text-binance-text">Phone / WhatsApp</p>
+                            <p class="text-binance-text-secondary">+254112009936</p>
                         </div>
                     </div>
                     <div class="flex items-center">
                         <i class="fas fa-map-marker-alt text-binance-yellow text-2xl w-12"></i>
                         <div>
                             <p class="font-semibold text-binance-text">Location</p>
-                            <p class="text-binance-text-secondary">Nairobi, Kenya</p>
+                            <p class="text-binance-text-secondary">Nairobi, Kenya · Available remotely worldwide</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Availability</p>
+                            <p class="text-binance-text-secondary">40 hrs/week · EAT (UTC+3) · 4–6hr US Eastern overlap</p>
                         </div>
                     </div>
                 </div>
@@ -355,20 +390,18 @@
     <footer class="bg-binance-darker text-binance-text-secondary py-8 border-t border-binance-border">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2026 Hemstone Omollo | Voltageitlabs. All rights reserved.</p>
-            <p class="mt-2">Built with HTML5, CSS3, JavaScript & Tailwind CSS</p>
+            <p class="mt-2">Senior Backend Engineer · Python · Django · AI Systems</p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when clicking a link
         const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -376,7 +409,6 @@
             });
         });
 
-        // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
